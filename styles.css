@@ -1,0 +1,177 @@
+/* COLORS */
+:root {
+    --blue-dark: #001f3f;
+    --blue-main: #003366;
+    --gold: #D4AF37;
+    --light: #f8f9fa;
+}
+
+/* BASIC RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* LAYOUT */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(to right, var(--blue-main), var(--blue-dark));
+    color: white;
+    padding: 15px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo-circle {
+    width: 50px;
+    height: 50px;
+    background: var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.logo-icon {
+    width: 28px;
+    color: var(--blue-dark);
+}
+
+.nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-gold {
+    background: var(--gold);
+    padding: 10px 18px;
+    border-radius: 5px;
+    color: var(--blue-dark);
+}
+
+.btn-outline {
+    padding: 10px 18px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+/* HERO */
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+
+.hero-content {
+    color: white;
+    padding-top: 180px;
+    max-width: 700px;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 70px 0;
+}
+
+.bg-light {
+    background: var(--light);
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    gap: 30px;
+}
+
+.two-columns {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.three-columns {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* CARDS */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 12px;
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.tag.gold {
+    background: rgba(212, 175, 55, 0.2);
+    color: var(--gold);
+}
+
+.tag.blue {
+    background: rgba(0, 51, 102, 0.2);
+    color: var(--blue-main);
+}
+
+/* CONTACT FORM */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--blue-dark);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
